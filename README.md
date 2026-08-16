@@ -46,6 +46,16 @@ Install the required libraries:
 ```bash
 pip install -r requirements.txt
 
+So it must look exactly like this:
+
+```text
+## How to Run
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+
 ## Author
 Meena Sree V T
 B.Tech Information Technology
