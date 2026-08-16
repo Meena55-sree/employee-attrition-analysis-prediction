@@ -52,11 +52,15 @@ B.Tech Information Technology
 St. Joseph's Institute of Technology
 
 ## 📸 Project Screenshots
+
 ### 📊 Employee Attrition Dashboard
-![Employee Attrition Dashboard](screenshots/dashboard.png)
+![Employee Attrition Dashboard](dashboard.png)
+
 ### 🔮 Employee Attrition Prediction
-![Prediction Result](screenshots/prediction-result.png)
-###  HR Recommendations
-![HR Recommendations](screenshots/hr-recommendations.png)
-###  Model Performance - Confusion Matrix
-![Confusion Matrix](screenshots/confusion-matrix.png)
+![Prediction Result](prediction-result.png)
+
+### 💡 HR Recommendations
+![HR Recommendations](Employee%20Attrition-prediction.png)
+
+### 📈 Model Performance - Confusion Matrix
+![Confusion Matrix](confusion-matrix.png)
