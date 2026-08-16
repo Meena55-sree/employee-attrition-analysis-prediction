@@ -41,20 +41,29 @@ The project uses the Random Forest Classifier for employee attrition prediction.
 - CSV Download
 
 ## How to Run
-Install the required libraries:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Meena55-sree/employee-at​​trition-analysis-prediction.git
+```
+
+2. Open the project folder:
+
+```bash
+cd employee-at​​trition-analysis-prediction
+```
+
+3. Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
+```
 
-So it must look exactly like this:
-
-```text
-## How to Run
-
-Install the required libraries:
+4. Run the Streamlit application:
 
 ```bash
-pip install -r requirements.txt
+streamlit run app.py
 ```
 
 ## Author
