@@ -220,7 +220,6 @@ roc_auc = roc_auc_score(
     y_test,
     y_probability
 )
-
 cm = confusion_matrix(
     y_test,
     y_pred
@@ -1513,93 +1512,22 @@ with tab3:
     col1, col2 = st.columns(2)
     with col1:
         st.metric(
-        "Model Accuracy",
-        "82.99%"
+    "Model Accuracy",
+    f"{accuracy * 100:.2f}%"
     )
+    
 
     with col2:
         st.metric(
-        "ROC-AUC Score",
-        "0.792"
+    "ROC-AUC Score",
+    f"{roc_auc:.3f}"
     )
         st.info(
-        "The Random Forest model achieved 82.99% accuracy "
-        "and a ROC-AUC score of 0.792 on the test dataset."
+    f"The Random Forest model achieved "
+    f"{accuracy * 100:.2f}% accuracy and a "
+    f"ROC-AUC score of {roc_auc:.3f} on the test dataset."
     )
         st.divider()
-        st.header("📌 Project Summary")
-        st.write("""
-This Employee Attrition Analysis project uses Machine Learning
-to predict whether an employee is likely to leave an organization.
-
-The system analyzes employee information such as:
-
-• Age
-• Monthly Income
-• Job Role
-• Overtime
-• Job Satisfaction
-• Work-Life Balance
-• Distance From Home
-• Years at Company
-• Stock Option Level
-
-The application provides employee attrition prediction,
-risk assessment, automatic HR insights and HR recommendations.
-""")
-# ============================================================
-# TECHNOLOGIES USED
-# ============================================================
-
-        st.divider()
-        st.header("🛠️ Technologies Used")
-
-        st.write("""
-• Python
-• Pandas
-• NumPy
-• Scikit-learn
-• Matplotlib
-• Seaborn
-• Streamlit
-• Machine Learning
-• Random Forest Classification
-• Logistic Regression
-""")
-# ============================================================
-# PROJECT INFORMATION
-# ============================================================
-
-        st.divider()
-
-        st.header("🎓 Project Information")
-
-        st.write("""
-Project Title:
-Employee Attrition Analysis and Prediction System
-
-Domain:
-Human Resources / Machine Learning
-
-Machine Learning Algorithms:
-Random Forest Classifier
-Logistic Regression
-
-Dataset:
-IBM HR Employee Attrition Dataset
-
-Dataset Size:
-1470 Employees and 35 Features
-
-Model Accuracy:
-82.99%
-
-ROC-AUC:
-0.792
-
-Application:
-Streamlit Web Dashboard
-""")
 
     # ========================================================
     # MODEL METRICS
