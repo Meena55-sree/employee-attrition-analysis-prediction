@@ -1,86 +1,138 @@
-# Employee Attrition Analysis and Prediction System
-## Project Overview
-The Employee Attrition Analysis and Prediction System is a Machine Learning-based project developed using Python and Streamlit.
-The system analyzes employee information and predicts the probability of employee attrition. It also provides risk classification, automatic HR insights, HR recommendations, and prediction reports.
+# Employee Attrition Analysis & Prediction
 
-## Objectives
-- Analyze employee attrition patterns
-- Perform data preprocessing and analysis
-- Develop a Machine Learning model
-- Predict employee attrition
-- Calculate attrition probability
-- Classify employees based on risk level
-- Generate automatic HR insights
-- Provide HR recommendations
+A machine learning web application that analyzes employee attrition patterns and predicts whether an employee is likely to leave an organization.
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Streamlit
+##  Project Overview
 
-## Machine Learning Model
-The project uses the Random Forest Classifier for employee attrition prediction.
+Employee attrition is an important challenge for organizations because unexpected employee turnover can increase recruitment costs and affect productivity.
 
-## Model Performance
-- Accuracy: 82.99%
-- ROC-AUC: 0.792
+This project uses **Machine Learning and Data Analysis** to:
 
-## Features
+* Analyze employee attrition patterns
+* Identify important factors influencing employee turnover
+* Predict employee attrition risk
+* Evaluate the performance of the machine learning model
+* Provide HR insights and recommendations
 
-- HR Key Performance Indicators
-- Employee Attrition Prediction
-- Attrition Probability
-- Risk Classification
-- Automatic HR Insights
-- HR Recommendations
-- Prediction Report
-- CSV Download
+##  Technologies Used
 
-## How to Run
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Streamlit
+* Joblib
 
-1. Clone the repository:
+##  Machine Learning Model
 
-```bash
-git clone https://github.com/Meena55-sree/employee-at​​trition-analysis-prediction.git
+The project uses a **Random Forest Classifier** to predict employee attrition.
+
+### Model Evaluation
+
+* Accuracy: approximately **83%**
+* ROC-AUC: approximately **0.79**
+
+The exact values may vary slightly depending on the model execution and dataset split.
+
+##  Dashboard Features
+
+###  Overview
+
+Provides an overview of the employee dataset and important HR statistics.
+
+###  Attrition Prediction
+
+Allows users to enter employee information and predict attrition risk.
+
+###  Model Analysis
+
+Displays:
+
+* Model accuracy
+* ROC-AUC score
+* Model performance information
+
+###  HR Insights
+Provides:
+
+* Important factors influencing attrition
+* Dataset-level insights
+* Attrition statistics
+* HR recommendations
+
+##  Dataset
+
+The project uses an employee attrition dataset containing information about employees such as:
+
+* Age
+* Monthly Income
+* Job Role
+* Department
+* Business Travel
+* Overtime
+* Job Satisfaction
+* Distance From Home
+* Years at Company
+* Total Working Years
+* And other employee-related attributes
+
+Dataset size: **1470 employees**
+
+## Project Structure
+
+```text
+employee-attrition-analysis-prediction/
+│
+├── app.py
+├── HR_Employee_Attrition.csv
+├── attrition_model.pkl
+├── requirements.txt
+├── README.md
+│
+├── Employee Attrition-prediction.png
+├── dashboard.png
+├── prediction-result.png
+└── confusion-matrix.png
 ```
 
-2. Open the project folder:
+## 🚀 How to Run Locally
+
+### 1. Clone the repository
 
 ```bash
-cd employee-at​​trition-analysis-prediction
+git clone <your-github-repository-url>
+cd employee-attrition-analysis-prediction
 ```
 
-3. Install the required libraries:
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the Streamlit application:
+### 3. Run the Streamlit application
 
 ```bash
 streamlit run app.py
 ```
 
-## Author
-Meena Sree V T
+The application will open in your browser.
+
+##  Live Application
+
+The project is deployed using Streamlit.
+
+**Live Demo:** <your-streamlit-app-url>
+
+##  Project Objective
+
+The main objective of this project is to demonstrate how machine learning can be applied to HR analytics to identify employee attrition patterns and support data-driven decision making.
+
+##  Developed By
+
+**Meena Sree V T**
+
 B.Tech Information Technology
 St. Joseph's Institute of Technology
-
-## 📸 Project Screenshots
-
-### 📊 Employee Attrition Dashboard
-![Employee Attrition Dashboard](dashboard.png)
-
-### 🔮 Employee Attrition Prediction
-![Prediction Result](prediction-result.png)
-
-### 💡 HR Recommendations
-![HR Recommendations](Employee%20Attrition-prediction.png)
-
-### 📈 Model Performance - Confusion Matrix
-![Confusion Matrix](confusion-matrix.png)
