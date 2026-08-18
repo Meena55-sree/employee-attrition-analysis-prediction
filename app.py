@@ -34,11 +34,6 @@ st.set_page_config(
 
 st.title("👥 Employee Attrition Analysis")
 
-st.write(
-    "Machine Learning Dashboard for Employee Attrition Prediction"
-)
-
-
 # ============================================================
 # LOAD DATASET
 # ============================================================
